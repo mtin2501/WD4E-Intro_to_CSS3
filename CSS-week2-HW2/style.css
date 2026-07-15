@@ -102,3 +102,10 @@ p {
 .grid img {
   width: 100%;
 }
+
+/* Step 9 (HW2): flex class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
