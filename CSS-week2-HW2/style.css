@@ -4,6 +4,21 @@ body {
   font-size: 16px;
 }
 
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #ffffff;
+  color: #2c3e50;
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* 4. header: background color */
 header {
   background-color: #2c3e50;
@@ -11,8 +26,11 @@ header {
 }
 
 /* 5. nav: background color */
+/* Step 4 (HW2): changed to inline-block, width 80% */
 nav {
   background-color: #34495e;
+  display: inline-block;
+  width: 80%;
 }
 
 nav a {
@@ -24,6 +42,10 @@ nav a:visited {
   color: #ffffff;
 }
 
+/* Step 5 (HW2): descendant selector, image inside nav only, width 10% */
+nav img {
+  width: 10%;
+}
 
 /* 6. main: background color + font size */
 main {
@@ -46,12 +68,14 @@ footer a:visited {
   color: #ffffff;
 }
 
-
 /* 8. li: display + width (nav list items, usually inside nav ul) */
+/* Step 3 (HW2): commented out per instructions */
+/*
 nav li {
   display: inline-block;
   width: 100px;
 }
+*/
 
 /* 9. h1: text alignment + font family + color */
 h1 {
@@ -63,4 +87,18 @@ h1 {
 /* 10. p: line height */
 p {
   line-height: 1.6;
+}
+
+/* Step 6-8 (HW2): grid class - two column grid */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Step 7 (HW2): images inside grid class only, width 100% */
+.grid img {
+  width: 100%;
 }
